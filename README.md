@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# News Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **News Website** where users can view news from various sources in a visually appealing layout. The project includes features such as **dark mode** to enhance readability and user experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Dark Mode Toggle**: Users can switch between light and dark themes to make reading news easier on the eyes, especially in low-light environments.
+- **Responsive Design**: The website is fully responsive, ensuring that it looks great on all devices, including mobile phones and tablets.
+- **Dynamic News Content**: News articles are dynamically fetched and displayed in a card layout with images, headlines, sources, and descriptions.
 
-### `npm start`
+## Dark Mode
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When dark mode is enabled:
+- **Navbar**: The background of the navigation bar changes to a darker color to match the theme.
+- **Text Colors**: The color of the text, including headlines and news descriptions, switches to white for better contrast against the dark background.
+- **News Cards**: The cards also adapt to dark mode, changing the background and text colors to ensure the content is always readable.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Custom CSS Variables
 
-### `npm test`
+The project uses CSS variables to easily switch between light and dark modes, ensuring that all elements, including text, buttons, and backgrounds, change appropriately.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Light Mode Text Colors**: The primary text color in light mode is dark, making it easy to read on a light background.
+- **Dark Mode Text Colors**: In dark mode, the text switches to white, providing optimal readability.
 
-### `npm run build`
+### News Card Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Each news article is presented in a **card** format, featuring:
+- **Image**: A thumbnail or image related to the news article.
+- **Headline**: The title of the article.
+- **Source**: The name of the news source.
+- **Description**: A short description or excerpt from the article.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+When dark mode is activated:
+- The card background switches to a dark color.
+- The card text, including the headline and description, turns white to remain visible against the darker background.
+- Hover effects are adjusted to match the theme.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **HTML**
+- **CSS (with CSS variables)**
+- **JavaScript**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Dark Mode Toggle
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The website includes a dark mode toggle button, allowing users to easily switch between light and dark themes. This enhances usability in various lighting conditions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future Enhancements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In future updates, the project will include:
+- **Category Filters**: Users will be able to filter news articles by category (e.g., Technology, Sports, Politics).
+- **Search Functionality**: A search bar to allow users to search for specific news articles by keywords.
+- **API Integration**: Fetching real-time news from various news APIs.
